@@ -1,3 +1,4 @@
+[![GitHub](https://img.shields.io/badge/View_on-GitHub-blue)](https://github.com/Toshit-Gupta/SimpleEncryptor)
 # 🔒 Java Encryption Tool
 
 A simple command-line program to encrypt and decrypt messages using XOR cipher. Data is saved between sessions.
