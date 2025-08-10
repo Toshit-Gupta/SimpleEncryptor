@@ -17,3 +17,5 @@ A simple command-line program to encrypt and decrypt messages using XOR cipher. 
    ```bash
    javac project.java
    java project
+## 📜 License  
+This project is licensed under the [MIT License](LICENSE).
