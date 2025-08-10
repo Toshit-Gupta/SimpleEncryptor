@@ -1,0 +1,18 @@
+# 🔒 Java Encryption Tool
+
+A simple command-line program to encrypt and decrypt messages using XOR cipher. Data is saved between sessions.
+
+## 🚀 Getting Started
+
+### Requirements
+- Java 8 or higher
+
+### How to Use
+1. Download the files:
+   - Click `Code` → `Download ZIP`
+   - Extract the folder
+
+2. Run the program:
+   ```bash
+   javac project.java
+   java project
