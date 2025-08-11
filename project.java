@@ -28,20 +28,25 @@ public class project
         System.out.println("Encrypted and saved!");
     }
 
-    // Decrypt text from file
-    public static void decrypt(String key) throws IOException {
-        List<String> lines = Files.readAllLines(new File(DATA_FILE).toPath());
-        String targetKey = String.valueOf(key.hashCode());
+    // Decrypt text from file - shows all messages with matching key
+   public static void decrypt(String key) throws IOException {
+    List<String> lines = Files.readAllLines(new File(DATA_FILE).toPath());
+    String targetKey = String.valueOf(key.hashCode());
+    boolean found = false;
 
-        for (String line : lines) {
-            if (line.startsWith(targetKey + ":")) {
-                String encrypted = line.split(":")[1];
-                System.out.println("Decrypted: " + xorProcess(encrypted, key));
-                return;
-            }
+    System.out.println("Decrypted messages with this key:");
+    for (String line : lines) {
+        if (line.startsWith(targetKey + ":")) {
+            String encrypted = line.split(":")[1];
+            System.out.println("- " + xorProcess(encrypted, key));
+            found = true;
         }
-        System.out.println("No data found for this key!");
     }
+    
+    if (!found) {
+        System.out.println("No data found for this key!");
+      }
+  }
 
     // Clear all data (reset file)
     public static void clearData() throws IOException {
