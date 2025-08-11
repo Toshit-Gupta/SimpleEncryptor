@@ -1,8 +1,9 @@
-import java.util.*;
-import java.io.FileWriter;
-import java.io.File;
-import java.nio.file.Files;
-import java.io.IOException;
+import java.util.Scanner;       // Used to take input from the user via console
+import java.util.List;          // Used to store lines read from the file as a list of strings
+import java.io.FileWriter;      // Used to write (or overwrite/append) text data to a file
+import java.io.File;            // Used to create a File object and access its path
+import java.nio.file.Files;     // Used to read all lines from a file easily (modern I/O)
+import java.io.IOException;     // Required to handle exceptions that may occur during file operations
 
 public class project
 {
