@@ -3,7 +3,7 @@
 
 A simple command-line program to encrypt and decrypt messages using XOR cipher. Data is saved between sessions.
 
-## 🚀 Getting Started
+## - 🔒"Encrypt anything as text without risking a data leak."
 
 ### Requirements
 - Java 8 or higher
